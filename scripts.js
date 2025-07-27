@@ -42,11 +42,11 @@ function update(direction) {
 
 // ------- esse SetInterval é o que faz o carrossel girar sozinho e o CleaInterval é o que limpa o temporizado e faz ficar no loop.
 
-/* clearInterval(timer);
+clearInterval(timer);
 
 timer = setInterval(() => {
   update(1);
-}, 5000); */
+}, 4000);
 
 // --------------------------------------------------
 
