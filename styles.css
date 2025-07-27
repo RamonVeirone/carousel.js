@@ -37,3 +37,10 @@ header nav ul {
     display: flex;
     gap: 40px;
 }
+
+header nav ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 5px 0;
+}
+
