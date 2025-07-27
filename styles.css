@@ -335,3 +335,25 @@ header nav ul li:hover::after {
     top: 10%;
     left: 10%;
 }
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  gap: 20px; 
+}
+
+
+nav ul li a {
+  text-decoration: none; 
+  color: inherit;  
+  font-weight: 500; 
+}
+
+
+nav ul li a:hover {
+  color: #00f7ff; 
+}
+
