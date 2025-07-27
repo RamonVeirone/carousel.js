@@ -36,6 +36,8 @@ function update(direction) {
 
   items[active].classList.add("active");
   dots[active].classList.add("active");
+
+  numberIndicator.textContent = String(active + 1).padStart(2, '0')
 }
 
 // ------- esse SetInterval é o que faz o carrossel girar sozinho e o CleaInterval é o que limpa o temporizado e faz ficar no loop. 
