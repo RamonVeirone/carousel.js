@@ -136,6 +136,7 @@ header nav ul li:hover::after {
     align-items: flex-start;
     justify-content: center;
     z-index: 2;
+    flex-direction: column;
 }
 
 .product-tag {
