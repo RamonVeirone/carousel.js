@@ -119,7 +119,7 @@ nav ul li a:hover {
 .item {
     position: absolute;
     inset: 0;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     opacity: 0;
@@ -128,8 +128,10 @@ nav ul li a:hover {
 }
 
 .active {
+    display: flex;
     opacity: 1;
     transform: translateX(0);
+    pointer-events: auto;
 }
 
 .product-img {
@@ -210,6 +212,8 @@ nav ul li a:hover {
     cursor: pointer;
     border: none;
     transition: transform 0.2s ease;
+    display: inline-block;
+    text-decoration: none;
 }
 
 .btn:hover {
