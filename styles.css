@@ -5,3 +5,10 @@
     list-style: none;
     font-family: "Montserrat", sans-serif;
 }
+
+body {
+    background-color: #0f0f1e;
+    color: #fff;
+    overflow: hidden;
+    font-size: 18px;
+}
