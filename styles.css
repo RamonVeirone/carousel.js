@@ -190,3 +190,34 @@ header nav ul li:hover::after {
     z-index: 99;
 }
 
+.arrow-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0, 247, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.arrow-btn svg {
+    width: 50px;  
+    height: 50px;
+    transition: transform 0.3s ease; 
+    fill: #00f7ff; 
+}
+
+.arrow-btn:hover {
+    transform: scale(1.2);
+    background-color: rgba(0, 247, 255, 0.2);
+    border-color: #00f7ff;
+}
+
+.arrow-btn:hover svg {
+    transform: scale(1.3); 
+}
+
+
