@@ -154,3 +154,11 @@ header nav ul li:hover::after {
     line-height: 1.1;
     margin-bottom: 20px;
 }
+
+.description {
+    font-size: 1.1rem;
+    color: #b8b8d0;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
