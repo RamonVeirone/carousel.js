@@ -1,48 +1,58 @@
-const prevButton = document.getElementById('prev')
-const nextButton = document.getElementById('next')
+const prevButton = document.getElementById("prev");
+const nextButton = document.getElementById("next");
 
-const items = document.querySelectorAll('.item')
+const items = document.querySelectorAll(".item");
 
-const dots = document.querySelectorAll('.dot')
+const dots = document.querySelectorAll(".dot");
 
-const numberIndicator = document.querySelector('.numbers')
+const numberIndicator = document.querySelector(".numbers");
 
-const list = document.querySelector('.list')
+const list = document.querySelector(".list");
 
-let active = 0 
-const total = items.length
-let timer
+// -------------------------------------------------
+
+let active = 0;
+const total = items.length;
+let timer;
 
 function update(direction) {
-    document.querySelector('.item.active').classList.remove('active')
-    
-    document.querySelector('.dot.active').classList.remove('active')
+  document.querySelector(".item.active").classList.remove("active");
 
-    if (direction > 0) {
-        active = active + 1
+  document.querySelector(".dot.active").classList.remove("active");
 
-        if (active === total) {
-            active = 0
-        }
+  if (direction > 0) {
+    active = active + 1;
 
-    } else if (direction < 0) {
-        active = active -1
-
-        if (active < 0) {
-            active = total -1 
-        }
+    if (active === total) {
+      active = 0;
     }
+  } else if (direction < 0) {
+    active = active - 1;
 
-    items[active].classList.add('active')
-    dots[active].classList.add('active')
+    if (active < 0) {
+      active = total - 1;
+    }
+  }
+
+  items[active].classList.add("active");
+  dots[active].classList.add("active");
 }
 
-prevButton.addEventListener('click', function() {
-    update(-1)
-    
-})
+// ------- esse SetInterval é o que faz o carrossel girar sozinho e o CleaInterval é o que limpa o temporizado e faz ficar no loop. 
 
-nextButton.addEventListener('click', function() {
-    update(1)
-    
-})
+clearInterval(timer);
+
+timer = setInterval(() => {
+  update(1);
+}, 2000);
+
+// --------------------------------------------------
+
+
+prevButton.addEventListener("click", function () {
+  update(-1);
+});
+
+nextButton.addEventListener("click", function () {
+  update(1);
+});
