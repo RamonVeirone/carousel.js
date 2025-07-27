@@ -231,3 +231,27 @@ header nav ul li:hover::after {
     gap: 15px;
     z-index: 99;
 }
+
+.numbers {
+    font-family: "Orbitron", sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.dots {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 40px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+
+.dot.active {
+    background-color: #00f7ff;
+    box-sizing: 0 0 10px rgba(0, 247, 255, 0.5);
+}
