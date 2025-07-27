@@ -220,4 +220,14 @@ header nav ul li:hover::after {
     transform: scale(1.3); 
 }
 
-
+.indicators {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    z-index: 99;
+}
