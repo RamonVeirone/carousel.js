@@ -12,3 +12,14 @@ body {
     overflow: hidden;
     font-size: 18px;
 }
+
+header {
+    position: fixed;
+    width: 95vw;
+    top: 0;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3; 
+}
