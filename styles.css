@@ -162,3 +162,19 @@ header nav ul li:hover::after {
     margin-bottom: 30px;
     max-width: 600px;
 }
+
+.btn {
+    padding: 12px 10px;
+    background: linear-gradient(90deg, #00f7ff, #0066ff);
+    border-radius: 10px;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
